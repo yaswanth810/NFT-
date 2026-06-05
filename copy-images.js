@@ -9,12 +9,12 @@ if (!fs.existsSync(destDir)) {
 }
 
 fs.copyFileSync(
-  path.join(srcDir, 'media__1780636476964.png'),
+  path.join(srcDir, 'media__1780668932491.png'),
   path.join(destDir, 'home.png')
 );
 
 fs.copyFileSync(
-  path.join(srcDir, 'media__1780638375103.png'),
+  path.join(srcDir, 'media__1780668932467.png'),
   path.join(destDir, 'explore.png')
 );
 
