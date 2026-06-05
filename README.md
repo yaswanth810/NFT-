@@ -5,6 +5,12 @@
 
 ![Ether Authority](./frontend/public/ether-authority-logo.svg)
 
+### 📸 Screenshots
+<div align="center">
+  <img src="./assets/home.png" alt="Home Page" width="49%">
+  <img src="./assets/explore.png" alt="Explore Page" width="49%">
+</div>
+
 ---
 
 ## 📋 Project Overview

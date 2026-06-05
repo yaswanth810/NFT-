@@ -1,0 +1,21 @@
+const fs = require('fs');
+const path = require('path');
+
+const srcDir = 'C:/Users/yaswa/.gemini/antigravity/brain/3532cc12-216a-4a06-95dc-6923e0e3684c';
+const destDir = 'C:/Users/yaswa/.gemini/antigravity/scratch/nft-marketplace/assets';
+
+if (!fs.existsSync(destDir)) {
+  fs.mkdirSync(destDir, { recursive: true });
+}
+
+fs.copyFileSync(
+  path.join(srcDir, 'media__1780636476964.png'),
+  path.join(destDir, 'home.png')
+);
+
+fs.copyFileSync(
+  path.join(srcDir, 'media__1780638375103.png'),
+  path.join(destDir, 'explore.png')
+);
+
+console.log('Images copied successfully.');

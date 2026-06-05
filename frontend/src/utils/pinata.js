@@ -5,9 +5,9 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 const PINATA_BASE  = "https://api.pinata.cloud";
-const JWT          = (import.meta.env.VITE_PINATA_JWT        || "").trim();
-const API_KEY      = (import.meta.env.VITE_PINATA_API_KEY    || "").trim();
-const API_SECRET   = (import.meta.env.VITE_PINATA_SECRET     || "").trim();
+const JWT          = (import.meta.env.VITE_PINATA_JWT        || "").replace(/[^\x20-\x7E]/g, "");
+const API_KEY      = (import.meta.env.VITE_PINATA_API_KEY    || "").replace(/[^\x20-\x7E]/g, "");
+const API_SECRET   = (import.meta.env.VITE_PINATA_SECRET     || "").replace(/[^\x20-\x7E]/g, "");
 
 /** Build auth headers — JWT is preferred over API key/secret */
 function authHeaders() {
