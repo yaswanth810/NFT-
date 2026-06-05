@@ -1,0 +1,26 @@
+[
+  {
+    "network": "scai",
+    "chainId": 34,
+    "deployedAt": "2026-06-05T04:21:53.416Z",
+    "deployer": "0xBE9085f51F17eCecF20407621F7302f9A426c34D",
+    "contracts": {
+      "NFTMarketplace": {
+        "address": "0x3c47a525EB1B5F470abc06A98829F078E302e245",
+        "txHash": "0xb80b9aa8c6e4db301f85b8b9cafc75a76871891539dfe1da69657996f5b90aad",
+        "explorer": "https://explorer.securechain.ai/address/0x3c47a525EB1B5F470abc06A98829F078E302e245",
+        "constructorArgs": [
+          "SCAI NFT Collection",
+          "SCAI",
+          "0"
+        ]
+      },
+      "Marketplace": {
+        "address": "0xE6d9eb0559db3f31Ce92C3886c75F208bb4f7e2C",
+        "txHash": "0xd851afb318d3afa72b295c5e8c3e68da28defd4c86e38763aea35340c21d8a9c",
+        "explorer": "https://explorer.securechain.ai/address/0xE6d9eb0559db3f31Ce92C3886c75F208bb4f7e2C",
+        "constructorArgs": []
+      }
+    }
+  }
+]

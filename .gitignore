@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# Hardhat build artifacts
+artifacts/
+cache/
+typechain-types/
+
+# Coverage
+coverage/
+coverage.json
+
+# Deployment receipts (keep deployedAddresses.json but ignore secrets)
+# deployments/ is intentionally NOT ignored so contract addresses are tracked
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temp
+tmp/
+temp/

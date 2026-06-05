@@ -1,0 +1,39 @@
+{
+  "name": "nft-marketplace",
+  "version": "1.0.0",
+  "description": "Decentralized NFT Marketplace on SCAI Network (Chain ID: 34)",
+  "scripts": {
+    "compile":          "hardhat compile",
+    "clean":            "hardhat clean",
+
+    "test":             "hardhat test",
+    "test:marketplace": "hardhat test test/marketplace.test.js --network hardhat",
+    "test:gas":         "REPORT_GAS=true hardhat test",
+
+    "node":             "hardhat node",
+
+    "deploy":           "hardhat run scripts/deploy.js --network scai",
+    "deploy:local":     "hardhat run scripts/deploy.js --network localhost",
+
+    "verify":           "hardhat run scripts/verify.js --network scai",
+
+    "interact":         "hardhat run scripts/interact.js --network scai",
+    "interact:local":   "hardhat run scripts/interact.js --network localhost",
+
+    "flatten:nft":      "hardhat flatten contracts/NFTMarketplace.sol > deployments/NFTMarketplace_flat.sol",
+    "flatten:market":   "hardhat flatten contracts/Marketplace.sol > deployments/Marketplace_flat.sol",
+    "flatten:all":      "npm run flatten:nft && npm run flatten:market"
+  },
+  "devDependencies": {
+    "hardhat":                              "^2.22.2",
+    "@nomicfoundation/hardhat-toolbox":     "^5.0.0",
+    "@nomicfoundation/hardhat-ethers":      "^3.0.0",
+    "chai":                                 "^4.3.10",
+    "mocha":                                "^10.4.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts":              "^4.9.6",
+    "ethers":                               "^6.11.1",
+    "dotenv":                               "^16.4.5"
+  }
+}
