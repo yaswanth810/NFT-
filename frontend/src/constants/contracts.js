@@ -17,9 +17,12 @@ export const SCAI_NETWORK = {
 export const EXPLORER_BASE = "https://explorer.securechain.ai";
 
 export const CONTRACT_ADDRESSES = {
-  NFTMarketplace: "0x3c47a525EB1B5F470abc06A98829F078E302e245",
-  Marketplace:    "0xE6d9eb0559db3f31Ce92C3886c75F208bb4f7e2C",
+  NFTMarketplace: import.meta.env.VITE_NFT_CONTRACT_ADDRESS
+    || "0x3c47a525EB1B5F470abc06A98829F078E302e245",
+  Marketplace: import.meta.env.VITE_MARKETPLACE_CONTRACT_ADDRESS
+    || "0xE6d9eb0559db3f31Ce92C3886c75F208bb4f7e2C",
 };
+
 
 // ── ABIs ──────────────────────────────────────────────────────────────────────
 
