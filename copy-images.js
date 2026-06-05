@@ -10,12 +10,12 @@ if (!fs.existsSync(destDir)) {
 
 fs.copyFileSync(
   path.join(srcDir, 'media__1780668932491.png'),
-  path.join(destDir, 'home.png')
+  path.join(destDir, 'home-v2.png')
 );
 
 fs.copyFileSync(
   path.join(srcDir, 'media__1780668932467.png'),
-  path.join(destDir, 'explore.png')
+  path.join(destDir, 'explore-v2.png')
 );
 
 console.log('Images copied successfully.');

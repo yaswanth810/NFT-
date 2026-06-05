@@ -7,8 +7,8 @@
 
 ### 📸 Screenshots
 <div align="center">
-  <img src="./assets/home.png" alt="Home Page" width="49%">
-  <img src="./assets/explore.png" alt="Explore Page" width="49%">
+  <img src="./assets/home-v2.png" alt="Home Page" width="49%">
+  <img src="./assets/explore-v2.png" alt="Explore Page" width="49%">
 </div>
 
 ---
